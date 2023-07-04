@@ -11,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.gaur.composenewsapplication.presentation.screens.HomeScreen
+import com.gaur.composenewsapplication.presentation.screens.LoginScreen
 import com.gaur.composenewsapplication.ui.theme.ComposeNewsApplicationTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -26,7 +27,8 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colors.background
                 ) {
                     MyApp {
-                        HomeScreen()
+//                        HomeScreen()
+                        LoginScreen()
                     }
                 }
             }

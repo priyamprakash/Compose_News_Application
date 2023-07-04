@@ -13,12 +13,9 @@ import dagger.hilt.components.SingletonComponent
 @Module
 object DomainModule {
 
-
     @Provides
     fun provideGetNewsRepo(apiService: ApiService):GetNewsArticleRepo{
         return GetNewsArticleRepoImpl(apiService = apiService)
     }
-
-
 
 }

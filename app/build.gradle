@@ -6,12 +6,13 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    namespace 'com.gaur.composenewsapplication'
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.gaur.composenewsapplication"
         minSdk 23
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -94,14 +95,6 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.2'
     kapt 'androidx.hilt:hilt-compiler:1.0.0'
-
-    // Coroutines
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0'
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0'
-
-    // Coroutine Lifecycle Scopes
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1"
-    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.4.1"
 
     // Coil
     implementation "io.coil-kt:coil-compose:1.4.0"
